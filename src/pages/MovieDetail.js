@@ -17,7 +17,7 @@ export const MovieDetail = () => {
 
         }
         GetMovies();
-    }, [])
+    }, [param.id])
 
     return (
         <main>
