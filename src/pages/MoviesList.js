@@ -1,5 +1,4 @@
 
-import { useState } from 'react';
 import { Card } from '../components'
 import { useFetch } from '../hooks/useFetch';
 
@@ -13,7 +12,7 @@ export const MoviesList = ({ apiPath }) => {
                 <div className='flex justify-start flex-wrap'>
                     {
                         movies.map((movie) => (
-                            <Card movie={movie} />
+                            <Card movie={movie} key={movie.id} />
                         ))
                     }
 
